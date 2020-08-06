@@ -1,8 +1,11 @@
 # Python project template files
-Template file for bootstrapping a new Python project.
+Template files for bootstrapping a new Python project.
 
 ## Purpose
-Bootstrapping a new Python project requires a number of different steps and files to create. This project is a set of basic configuration and environments files that are usually needed by every Python project. Defaut Python version for this project chosen - 3.8.
+Bootstrapping a new Python project requires some steps to take and files to create. This project is a set of basic configuration and environments files that are usually needed by every Python project. Default Python version for this project chosen - 3.8.
+
+## Directory structure
+The project consists of <project_name> (replace with your project name), and tests folder.  Separating these two folders allows deploying files only from <project_name> folder, leaving the test folder only for testing purposes. 
 
 ## Tools used in this project
 We use the following tools for purposes of testing, styling, and type checking. Many of them find their configuration in project root's setup.cfg.
@@ -33,8 +36,8 @@ We use the following tools for purposes of testing, styling, and type checking. 
   - Run: mypy . --ignore-missing-imports from project root
 
 ## How to bootstrap a new Python project
-Copy contents of project directory, then:
+Copy contents of the project directory, then:
 1. Rename README.md.template file to README.md so that you have a template readme file. Edit this file accordingly.
 2. Change folder name "project_name" according to your project name
-3. Update setup.cfg and setup.py files, replace <your_project_name> with your project name and edit correspoinding fields according to your needs.
+3. Update setup.cfg and setup.py files, replace <your_project_name> with your project name, and edit corresponding fields according to your needs.
 
