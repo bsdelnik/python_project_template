@@ -1,0 +1,48 @@
+# Project Name
+
+Short project description 
+
+## Purpose
+
+Purpose of the project
+
+## Requirements
+- Python 3.7 (for install check https://www.python.org/downloads/)
+
+## Running a local deployment
+Run pip install setuptools for installing project dependencies.
+
+Run pip install black to install code formatter. Run black: `black .`
+Run pip install tox to install ad-hoc Python virtual environment. Run tox: `tox .`
+Run pip install pip-tools to install the `pip-compile` command for generating requirements.txt.
+
+**Usage:** main.py [-h] [--param1] [--param2] [--param3]
+
+Optional arguments:
+
+  **-h, --help**           show this help message and exit
+  
+  **--param1 PARAM1**
+                        Param1 description. Default: default_parameter_value.
+
+## Confirming that everything is working
+Run tests with `pytest .`
+
+## Local development
+During development, use the following commands in the project root folder regularly (at least before opening a PR):
+
+Run `black .` to autoformat code files.
+Run `pytest` to execute tests and check code style.
+Run `tox` to run tests in fresh Python virtual environment. This helps with checking the completeness/coherence of setup.py.
+Run `pip-compile` if you added new dependencies to setup.py. This will create a new requirements.txt file with fixed versions.
+Run `make clean` to clean up all the artifacts the other tools left behind (they're ignored via .gitignore file, so you can also leave them be if you prefer).
+
+# Configuration
+Pytest and the tools invoked by it are configured in setup.cfg file. Tox is configured via tox.ini file.
+
+## Environment Variables
+
+Describe environment variables if needed
+
+# Other info
+Add other info here if needed
